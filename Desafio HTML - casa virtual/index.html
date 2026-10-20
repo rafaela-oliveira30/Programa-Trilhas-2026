@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Guardiã das Chamas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <header class="game-header">
+      <h1>🌸 Guardiã das Chamas 🌸</h1>
+      <p class="subtitle">Você é uma brava bombeira. Encontre o cômodo com a pessoa presa!</p>
+    </header>
+
+    <div class="hud">
+      <span id="steps">Movimentos: 0</span>
+      <span id="hint">Casa em chamas</span>
+    </div>
+
+    <section class="status">
+      <div class="label">Localização atual</div>
+      <div class="room" id="roomName">—</div>
+      <div class="desc" id="roomDesc">—</div>
+    </section>
+
+    <div class="actions" id="actions"></div>
+
+    <div class="message" id="message"></div>
+
+    <button class="restart" id="restartBtn" style="display:none;">Jogar novamente</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
