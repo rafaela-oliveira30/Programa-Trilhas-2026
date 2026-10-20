@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🌸 GamerGirls Manager</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>🌸 GamerGirls Manager</h1>
+    <p class="subtitulo">Painel de gerenciamento da sua equipe de elite 💜</p>
+  </header>
+
+  <main>
+    <section class="painel">
+      <h2>✨ Menu Principal</h2>
+      <div class="menu">
+        <button onclick="cadastrarJogadora()">1 · Cadastrar Jogadora</button>
+        <button onclick="listarJogadoras()">2 · Listar Jogadoras</button>
+        <button onclick="buscarJogadora()">3 · Buscar Jogadora</button>
+        <button onclick="exibirEstatisticas()">4 · Estatísticas da Equipe</button>
+        <button onclick="atualizarPontuacao()">5 · Atualizar Pontos</button>
+      </div>
+    </section>
+
+    <section class="painel">
+      <h2>💖 Equipe Atual</h2>
+      <div id="listaJogadoras" class="lista">
+        <p class="vazio">Nenhuma jogadora cadastrada ainda. Comece pela opção 1! 🌷</p>
+      </div>
+    </section>
+
+    <section class="painel">
+      <h2>📊 Estatísticas</h2>
+      <div id="estatisticas" class="estatisticas">
+        <p>Média da equipe: <strong>--</strong></p>
+      </div>
+    </section>
+
+    <section class="painel" id="painelResultado" style="display:none;">
+      <h2>🔎 Resultado</h2>
+      <div id="resultado"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>💜 Feito com lógica, arrays, objetos e muito estilo 💜</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
